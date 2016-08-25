@@ -15,12 +15,13 @@
 %
 % e.g.
 % [BookendingValues] = Bookends(rand(90),2)
+%
+% Changelog:
+%   >>  I think that nonzeros(X) accomplishes the same thing as:
+%       full(X);X(~X)=[];
+%       ... so, this simplified significantly from v0.
 
 function [BookendingValues] = Bookends(DataArray, optDblPrctileTol)
 if ~exist('optDblPrctileTol','var');  optDblPrctileTol = 0; end; % if no tol, return max & min.
-if issparse(DataArray) % full out & nix empty elements of DataArray if sparse
-    DataArray = full(DataArray);
-    DataArray(~DataArray) = [];
-end
-BookendingValues = [prctile(DataArray(:), optDblPrctileTol), prctile(DataArray(:), 100-optDblPrctileTol)];
+BookendingValues = [prctile(nonzeros(DataArray), optDblPrctileTol), prctile(nonzeros(DataArray), 100-optDblPrctileTol)];
 end
