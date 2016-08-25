@@ -1,4 +1,4 @@
-efunction [ strBar ] = BarMeter(FracDone,qWrite2CommandWindow)
+function [ strBar ] = BarMeter(FracDone,qWrite2CommandWindow)
 %BARMETER: Visual representation of [model?] progress
 % input:
 %     FracDone: fraction of something; e.g. [.5]

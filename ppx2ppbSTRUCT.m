@@ -12,8 +12,8 @@ function StructOut = ppx2ppbSTRUCT(StructIn)
 StructOut = struct;
 
 %%% This section loops over all the fields
-% If the field name includes 'ppm', converts to 'ppb' and converts
-% if field name not include 'ppm', copy straight over
+% If the field name includes 'pp{m,t}', converts to 'ppb' and converts
+% if field name not include 'pp{m,t}', copy straight over
 vfields = fields(StructIn);
 for vf = 1:length(vfields)
     vfield = vfields{vf};   
