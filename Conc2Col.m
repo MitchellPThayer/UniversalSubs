@@ -1,4 +1,4 @@
-% Conc2Colv3.m - Converts mixing ratios to vertical column, assuming a
+% Conc2Col.m - Converts mixing ratios to vertical column, assuming a
 % well-mixed planetary boundry layer.
 %
 % Mitchell Thayer 2016.08
