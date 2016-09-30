@@ -1,3 +1,5 @@
+% This code not fully tested/corroborated. Do not use until corrected or shown correct. MPT 2016.09.29
+
 % MPT 2016.07.24
 % Converts GPS coordinates to a cartesian X/Y (N/E) coords
 %%%%%%%%%%%%%%%%%%%
