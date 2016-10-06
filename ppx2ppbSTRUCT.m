@@ -1,4 +1,4 @@
-% Converts measurements from ppmv or ppbv to ppbv
+% Converts measurements from ppmv or pptv to ppbv
 % Feed in a full struct w/ units in name
 % Returns struct with individual fields tweaked
 
