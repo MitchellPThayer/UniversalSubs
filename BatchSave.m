@@ -31,9 +31,14 @@ for i = 1:length(FigureHandles);
     if ~isempty(PositionArray) % if desired, resize
         thisF.WindowStyle = 'normal'; % to resize, must ensure undocked
         set(thisF,'Position',PositionArray);
+        pause(0.001)
+        drawnow update
+        
     end
 
     DoubleSave(thisF, [strFigureName,'_',num2str(i)], strOutputPath);
+    
+    pause(0.001)
 
     if qCloseFigs % if desired, close the figure
         close(thisF)        

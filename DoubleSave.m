@@ -70,7 +70,7 @@ end
 % Take off extra '/' if included in FilePath
 % Otherwise will crash due to [FilePath,filesep...]
 if strcmp(FilePath(end),'/')
-    FilePath = FilePath(1:end-1)
+    FilePath = FilePath(1:end-1);
 end
 
 %%%%%%%%%
